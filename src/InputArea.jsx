@@ -10,14 +10,15 @@ function InputArea(props) {
 
 	return (
 		<div className="form">
-			<input onChange={handleChange} type="text" value={inputText} />
+			<input className="box-border bg-transparent p-3" onChange={handleChange} type="text" value={inputText} />
 			<button
+				className="p-0 border-none italic no-underline bg-yellow-100 pb-1 rounded-lg"
 				onClick={() => {
 					props.onAdd(inputText);
 					setInputText("");
 				}}
 			>
-				<span>Add</span>
+				<span className="bg-white block py-2 px-4 rounded-lg border-2 border-solid border-black text-xs">Add</span>
 			</button>
 		</div>
 	);

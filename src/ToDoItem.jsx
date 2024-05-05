@@ -7,7 +7,7 @@ function ToDoItem(props) {
 				props.onChecked(props.id);
 			}}
 		>
-			<li>{props.text}</li>
+			<li className="text-left p-2 relative">{props.text}</li>
 		</div>
 	);
 }
